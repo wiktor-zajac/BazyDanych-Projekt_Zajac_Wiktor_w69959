@@ -1,0 +1,3 @@
+Check for typos in all Models (typos, plural/singular, order of)
+Triple check if project requierments are matched (from Professor and me)
+Double check relations
