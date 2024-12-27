@@ -1,3 +1,15 @@
 Check for typos in all Models (typos, plural/singular, order of)
 Triple check if project requierments are matched (from Professor and me)
 Double check relations
+For int fields in model, set proper min/max validators
+    https://stackoverflow.com/questions/42425933/how-do-i-set-a-default-max-and-min-value-for-an-integerfield-django
+Consider using string vs django-money lib
+    https://github.com/django-money/django-money
+Deicde how to store Sex info (if at all)
+Is CustomModel even necessary (and properly implemented)?
+Maybe test this models as a real Django app?
+Check default value for attributes in models
+Create the generational simulation with random data and parameters
+Create readme.md
+Double check relations in models
+Change some enums from number based to string based?
