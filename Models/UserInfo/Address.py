@@ -1,10 +1,10 @@
-from Models.CustomModel import CustomModel
+from Models.CustomModel import DEFAULT_CHAR_FIELD_LENGTH, CustomModel
 import django.db.models as models
 
 
 class Address(CustomModel):
-    AddressId = models.AutoField(primary_key=True, editable=False, null=False, unique=True)
-    PostalCode = models.CharField(max_length=256, editable=True, null=False, blank=False)
-    City = models.CharField(max_length=256, editable=True, null=False, blank=False)
-    PostalOffice = models.CharField(max_length=256, editable=True, null=False, blank=False)
-    Address = models.CharField(max_length=256, editable=True, null=False, blank=False)
+    AddressId = models.BigAutoField(primary_key=True)
+    PostalCode = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)
+    City = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)
+    PostalOffice = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)
+    Address = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)

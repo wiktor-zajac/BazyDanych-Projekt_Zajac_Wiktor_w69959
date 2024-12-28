@@ -5,8 +5,8 @@ from Models.UserInfo.PersonalInfo import PersonalInfo
 import django.db.models as models
 
 
-class Employee(CustomModel):
-    EmployeeId = models.BigAutoField(primary_key=True)
+class Profesor(CustomModel):
+    ProfesorId = models.BigAutoField(primary_key=True)
     FirstName = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)
     LastName = models.CharField(max_length=DEFAULT_CHAR_FIELD_LENGTH)
     ContactInfoId = models.ForeignKey(to=ContactInfo, to_field=ContactInfo.ContactInfoId, on_delete=models.CASCADE)
